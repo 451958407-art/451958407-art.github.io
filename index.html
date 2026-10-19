@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Who am I - Sunny</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(180deg, #fff3d6 0%, #ffe8c2 50%, #ffd9a8 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .sun {
+      position: absolute;
+      top: -40px; left: -40px;
+      width: 160px; height: 160px;
+      background: radial-gradient(circle, #ffd93d 0%, #ffc107 100%);
+      border-radius: 50%;
+      opacity: 0.8;
+    }
+    .cloud {
+      position: absolute;
+      background: rgba(255,255,255,0.8);
+      border-radius: 50px;
+    }
+    .cloud1 { top: 60px; right: 15%; width: 100px; height: 35px; }
+    .cloud2 { top: 100px; right: 30%; width: 70px; height: 25px; }
+    .grass {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 100px;
+      background: linear-gradient(180deg, #7bc96f 0%, #5cb85c 100%);
+      border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    }
+    h1 {
+      font-size: 4.5rem;
+      color: #e497d5;
+      text-shadow: 3px 3px 0 rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
+      z-index: 1;
+    }
+    .subtitle {
+      font-size: 1.8rem;
+      color: #4f9bc8;
+      margin-bottom: 2rem;
+      z-index: 1;
+    }
+    .intro {
+      font-size: 1.2rem;
+      color: #666;
+      max-width: 500px;
+      line-height: 1.8;
+      margin-bottom: 2.5rem;
+      z-index: 1;
+    }
+    .links {
+      display: flex;
+      gap: 1rem;
+      z-index: 1;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 32px;
+      background: linear-gradient(135deg, #ffb6c1 0%, #ff9eb5 100%);
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 15px rgba(255, 158, 181, 0.4);
+      transition: transform 0.2s;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .year {
+      position: absolute;
+      bottom: 30px;
+      font-size: 1.5rem;
+      color: #4f9bc8;
+      font-weight: bold;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="sun"></div>
+  <div class="cloud cloud1"></div>
+  <div class="cloud cloud2"></div>
+  <div class="grass"></div>
+  
+  <h1>Who am I?</h1>
+  <p class="subtitle">Hi, I'm Sunny!</p>
+  <p class="intro">
+    一个喜欢探索世界的小朋友 🌈<br>
+    喜欢植物、小动物、烘焙和唱歌<br>
+    有好多好多梦想呀！
+  </p>
+  <div class="links">
+    <a href="https://github.com/451958407-art/kid-tasks" class="btn">小朋友任务打卡</a>
+  </div>
+  <p class="year">2026</p>
+</body>
+</html>
